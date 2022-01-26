@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Download - NeuSprite</title>
+	<meta property="og:title" content="Download - NeuSprite">
+	<meta property="og:type" content="product">
+	<meta property="og:description" content="Download Latest NeuSprite Binaries">
+	<meta property="og:image" content="./images/og-image.png">
+	<meta name="keywords" content="sprite editor, NeuSprite, ns, spritesheet maker, electron, minimalistic, pixel art maker, pixel editor, graphics">
+
+	<link href="./favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="./build/bundle.css" rel="stylesheet">
+</head>
+<body>
+	<article>
+			<div class="articleHeader">
+				<h1>Get NeuSprite</h1>
+				<h2>Download NeuSprite v1.0.1 Binaries</h2>
+				<div class="downloadBtn">
+					<a href="https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-win32_x64.7z">Windows (7z Archive)</a>
+					<a href="https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-linux_x64.AppImage">Linux (AppImage)</a>
+				</div>
+			</div>
+			<div class="articleBody">
+				<h3>How To Build From Source?</h3>
+				<p>1. Getting Repository:</p>
+				<code>git clone https://github.com/DEVLOPRR/NeuSprite</code>
+
+				<p>2. Installing Dependencies</p>
+				<code>cd NeuSprite/<br>npm install</code>
+
+				<p>3. Building Binaries</p>
+				<code>npm run build</code>
+
+				<p>4. Packaging To 7z Archive For Windows</p>
+				<code>npm run package:win32</code>
+
+				<p>4. Packaging To AppImage For Linux</p>
+				<code>npm run package:linux</code>
+
+				<p>5. (Optional) Getting SHA256 Has For Built Binaries</p>
+				<code>npm run hash</code>
+			</div>
+			<footer class="footer" role="banner">
+				<p>This project is <a href="https://github.com/DEVLOPRR/NeuSprite/blob/main/LICENSE">MIT Licensed</a> And Was Created by <a href="http://github.com/DEVLOPRR">Aditya Mishra</a></p>
+			</footer>
+	</article>
+</body>
+</html>

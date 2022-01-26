@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+:root {
+	--col1: #effed3;
+	--col2: #342828;
+	--col3: #96c024;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.4;
+	color: var(--col2);
+	background-color: var(--col1);
+}
+
+body {
+	font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+article {
+	margin: 0 auto;
+	max-width: 65em;
+	background-color: #FFFFFF;
+}
+
+code {
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+	background-color: var(--col2);
+	color: var(--col1);
+	border-radius: 5px;
+}
+
+li {
+	margin: 10px 0;
+}
+
+kbd {
+	color: var(--col1);
+	background-color: var(--col2);
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+a {
+	font-weight: bold;
+	color: var(--col1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+article div.articleBody a {
+	color: var(--col2);
+}
+
+article div.articleBody p {
+	font-size: 1.05em;
+}
+
+div.articleHeader {
+	padding: 3em;
+	text-align: center;
+	background-color: var(--col3);
+}
+
+div.articleHeader h1 { color: var(--col1); }
+div.articleHeader h2 { font-weight: normal; }
+
+div.articleBody h3 {
+	font-size: 1.7em;
+	color: var(--col3);
+}
+
+.downloadBtn {
+	display: block;
+}
+
+.downloadBtn a {
+	color: var(--col3);
+	padding: 10px;
+	background-color: var(--col1);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	margin: 5px 0;
+}
+
+h1 {
+	color: var(--col3);
+	font-size: 3.2em;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+h2 { font-size: 1.2em; }
+
+h3 {
+	font-size: 1.3em;
+	margin-top: 0;
+	padding-top: .9em;
+}
+
+@media (max-width: 1077px) {
+	body { margin: 0; }
+	div.articleBody {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media (min-width: 1077px) {
+	body { margin: 8px; }
+
+	div.articleBody {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+.footer {
+	font-size: .8em;
+	font-weight: normal;
+	border-top: 1px solid #e9e6e1;
+	margin: 2em 0;
+	padding: 1em;
+	background-color: var(--col3);
+	color: var(--col1);
+	text-align: center;
+}
