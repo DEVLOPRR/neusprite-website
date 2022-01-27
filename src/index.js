@@ -35,7 +35,7 @@ var osSelector = new SlimSelect({
 			btnAMD64.innerText = 'Windows x64';
 
 			let btnIA32 = document.createElement('a');
-			btnIA32.href = URLs.win32.x64;
+			btnIA32.href = URLs.win32.x86;
 			btnIA32.innerText = 'Windows x86';
 
 			if (is64Bit) {
@@ -51,7 +51,7 @@ var osSelector = new SlimSelect({
 			btnAMD64.innerText = 'Linux x64';
 
 			let btnIA32 = document.createElement('a');
-			btnIA32.href = URLs.linux.x64;
+			btnIA32.href = URLs.linux.x86;
 			btnIA32.innerText = 'Linux x86';
 
 			if (is64Bit) {
