@@ -17,16 +17,23 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="./build/bundle.css" rel="stylesheet">
+	<script src="./build/bundle.js" defer></script>
 </head>
 <body>
 	<article>
 			<div class="articleHeader">
+				<noscript>
+					<h2>
+						JavaScript is required to run this Page correctly.
+					</h2>
+				</noscript>
 				<h1>Get NeuSprite</h1>
 				<h2>Download NeuSprite v1.0.1 Binaries</h2>
-				<div class="downloadBtn">
-					<a href="https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Win32_x64.7z">Windows (7z Archive)</a>
-					<a href="https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Linux_x64.AppImage">Linux (AppImage)</a>
-				</div>
+				<div id="downloadBtnHolder" class="downloadBtn"></div>
+				<select id="osSelector">
+					<option value="win32">Windows</option>
+					<option value="linux">Linux</option>
+				</select>
 			</div>
 			<div class="articleBody">
 				<h3>How To Build From Source?</h3>
