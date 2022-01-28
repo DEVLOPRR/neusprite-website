@@ -1,7 +1,7 @@
 import './styles/index.css';
+import './styles/slim-select.css';
 import { ClientJS } from 'clientjs';
 import SlimSelect from 'slim-select';
-import './styles/slim-select.css';
 
 const downloadBtnHolder = document.getElementById('downloadBtnHolder');
 
@@ -18,6 +18,7 @@ const URLs = {
 }
 
 document.getElementById("downloadTitle").innerText = `Download NeuSprite ${version} Binaries`;
+document.getElementById("changelogPara").innerHTML = `Read What's New in <a href="/changelog#stable-${version}">${version}</a>`;
 
 const client = new ClientJS();
 var is64Bit = true;
