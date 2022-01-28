@@ -5,17 +5,19 @@ import './styles/slim-select.css';
 
 const downloadBtnHolder = document.getElementById('downloadBtnHolder');
 
-const tagName = 'stable-v1.0.2';
+const version = 'v1.0.2';
 const URLs = {
 	win32: {
-		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Win32_x64.7z`,
-		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Win32_x86.7z`
+		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/stable-${version}/NeuSprite-Win32_x64.7z`,
+		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/stable-${version}/NeuSprite-Win32_x86.7z`
 	},
 	linux: {
-		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Linux_x64.AppImage`,
-		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Linux_x86.AppImage`
+		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/stable-${version}/NeuSprite-Linux_x64.AppImage`,
+		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/stable-${version}/NeuSprite-Linux_x86.AppImage`
 	},
 }
+
+document.getElementById("downloadTitle").innerText = `Download NeuSprite ${version} Binaries`;
 
 const client = new ClientJS();
 var is64Bit = true;
