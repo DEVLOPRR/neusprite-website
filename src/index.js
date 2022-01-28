@@ -5,14 +5,15 @@ import './styles/slim-select.css';
 
 const downloadBtnHolder = document.getElementById('downloadBtnHolder');
 
+const tagName = 'stable-v1.0.2';
 const URLs = {
 	win32: {
-		x64: 'https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Win32_x64.7z',
-		x86: 'https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Win32_x86.7z'
+		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Win32_x64.7z`,
+		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Win32_x86.7z`
 	},
 	linux: {
-		x64: 'https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Linux_x64.AppImage',
-		x86: 'https://github.com/DEVLOPRR/NeuSprite/releases/download/stable/NeuSprite-Linux_x86.AppImage'
+		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Linux_x64.AppImage`,
+		x86: `https://github.com/DEVLOPRR/NeuSprite/releases/download/${tagName}/NeuSprite-Linux_x86.AppImage`
 	},
 }
 
