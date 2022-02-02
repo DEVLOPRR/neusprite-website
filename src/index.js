@@ -5,7 +5,7 @@ import SlimSelect from 'slim-select';
 
 const downloadBtnHolder = document.getElementById('downloadBtnHolder');
 
-const version = 'v1.0.2';
+const version = 'v1.0.3';
 const URLs = {
 	win32: {
 		x64: `https://github.com/DEVLOPRR/NeuSprite/releases/download/stable-${version}/NeuSprite-Win32_x64.7z`,
